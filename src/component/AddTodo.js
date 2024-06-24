@@ -33,7 +33,7 @@ class AddTodo extends Component {
       this.setState({
         content: "",
         date: "",
-        due: null
+        due: null,
       });
     }
   };
@@ -69,7 +69,6 @@ class AddTodo extends Component {
             />
         </LocalizationProvider>
 
-        
         <Button
           style={{ marginLeft: "10px" }}
           onClick={this.handleSubmit}

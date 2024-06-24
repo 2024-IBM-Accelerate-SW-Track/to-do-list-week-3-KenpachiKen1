@@ -32,8 +32,8 @@ class Home extends Component {
     if (exists){ return }
 
 
-    if(todo.due == null || todo.due == "Invalid Date"){
-      return
+    if(!todo.due || todo.due === "Invalid Date"){
+      return;
     }
     
     
