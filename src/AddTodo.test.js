@@ -111,7 +111,7 @@ afterEach(() => {
   fireEvent.change(inputDate, {target: {value: dueDate}});
   fireEvent.click(element);
 
-  const checkbox = screen.getByRole('checkbox');
+  const checkbox = screen.getByRole('Checkbox');
   fireEvent.click(checkbox);
 
   const tasks= screen.queryByText(new RegExp(taskName, "i"));
