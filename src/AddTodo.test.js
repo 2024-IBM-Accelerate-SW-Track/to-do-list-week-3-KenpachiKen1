@@ -90,7 +90,7 @@ afterEach(() => {
   fireEvent.click(element);
 
 
-  const card = screen.getByText(taskName).closest('.MuiCard-root');
+  const card = screen.getByTestId(/Math Test/i).style.background
   expect(card).toHaveStyle('background-color: red');
 
   
