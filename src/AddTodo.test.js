@@ -16,10 +16,6 @@ afterEach(() => {
   container.remove();
   container = null;
 });
-
-
-
-
 test('App component doesn\'t render duplicate Task', () => {
   render(<App />);
   const inputTask = screen.getByRole('textbox', {name: /Add New Item/i});
@@ -98,3 +94,7 @@ test('App component renders different colors for past due events', () => {
   const card = screen.getByTestId(taskName);
   expect(card).toHaveStyle('background-color: red');  // Assuming red color is used for past due events
 });
+
+
+
+
